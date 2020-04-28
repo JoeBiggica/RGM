@@ -44,14 +44,14 @@ class SiteHead extends PureComponent {
 				<meta name='keywords' content='' />
 
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:image' content='https://www.theleakybarrel.com/static/fongs-social-logo.png' />
+				<meta name='twitter:image' content='https://www.theleakybarrel.com/static/leakybarrel-social-logo.png' />
 
 				<meta property="fb:app_id" content="926660327777500"/>
 				<meta name='og:title' property="The Leaky Barrel" />
 				<meta property='og:description' content="The Leaky Barrel Wines and Spirits website" />
 				<meta property="og:type" content="website" />
 				<meta property='og:url' content='https://www.theleakybarrel.com/' />
-				<meta property='og:image' content='https://www.theleakybarrel.com/static/fongs-social-logo.png' />
+				<meta property='og:image' content='https://www.theleakybarrel.com/static/leakybarrel-social-logo.png' />
 
 				<meta name='msapplication-TileColor' content='#000000' />
 				<meta name='msapplication-config' content='none' />
