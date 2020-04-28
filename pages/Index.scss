@@ -2,50 +2,11 @@
 @import 'styles/_colors.scss';
 @import 'styles/_eases.scss';
 
-.video-banner {
-	background-image: url('https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/images/lion-dance/head-banner.jpg');
-	background-position: 50%;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-    &:before {
-		content: '';
-	    background: rgba(0,0,0,.75);
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    z-index: 2;
-
-	    @include for-tablet-landscape-up {
-	    	background: rgba(0,0,0,.65);
-	    }
-	}
-
-	iframe {
-		display: none;
-		width: 100vw;
-	    height: 56.25vw;
-	    min-height: 100vh;
-	    min-width: 177.77vh;
-	    position: absolute;
-	    pointer-events: none;
-	    top: 50%;
-	    left: 50%;
-	    z-index: 1;
-	    border: 0;
-	    transform: translate(-50%,-50%);
-
-	    @include for-tablet-landscape-up {
-	    	display: block;
-	    }
-	}
+.main-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: $blacker;
 }
 
 .content {
@@ -76,11 +37,16 @@
     width: 100%;
     max-width: 600px;
     padding-top: 10px;
+    margin-bottom: 30px;
 
     @include for-tablet-portrait-up {
     	font-size: 21px;
     	line-height: 31px;
     }
+}
+
+.buy-button {
+	margin-bottom: 25px;
 }
 
 .social-buttons {

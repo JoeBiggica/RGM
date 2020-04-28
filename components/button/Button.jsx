@@ -5,7 +5,6 @@ import classnames from 'classnames';
 import styles from './Button.scss';
 
 const Color = {
-	RED: 'red',
 	BLACK: 'black',
 	WHITE: 'white'
 };
@@ -21,7 +20,7 @@ class Button extends PureComponent {
 	}
 
 	static defaultProps = {
-		color: Color.RED
+		color: Color.WHITE
 	}
 
 

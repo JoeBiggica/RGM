@@ -24,13 +24,14 @@
 			background: black;
 		}
 
-		&.red {
-			background: $red;
-			color: $white;
-			filter: drop-shadow(3px 3px 1px $black);
+		&.white {
+			background: $white;
+			color: $blackest;
+			filter: drop-shadow(3px 3px 1px $blackest);
 
 			&:hover {
-				background: $black;
+				background: $purple;
+				color: $white;
 			}
 		}
 	}

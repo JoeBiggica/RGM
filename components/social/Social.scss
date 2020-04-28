@@ -34,7 +34,7 @@
 
 .always-white,
 .white-to-original,
-.white-to-red {
+.white-to-purple {
 	svg path {
 		fill: $white;
 	}
@@ -42,7 +42,7 @@
 	border-color: $white;
 }
 
-.black-to-red {
+.black-to-purple {
 	svg path {
 		fill: $black;
 	}
@@ -77,16 +77,16 @@
 
 	&.email svg path,
 	&.link svg path {
-		fill: $red;
+		fill: $purple;
 	}
 }
 
-.white-to-red:hover,
-.black-to-red:hover {
+.white-to-purple:hover,
+.black-to-purple:hover {
 	svg path {
-		fill: $red;
+		fill: $purple;
 	}
-	border-color: $red;
+	border-color: $purple;
 }
 
 svg {
