@@ -1,0 +1,136 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.inner-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content-container {
+	padding: 40px 30px;
+	display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-tablet-portrait-up {
+    	padding: 70px 150px;
+	}
+
+    @include for-tablet-landscape-up {
+    	padding: 70px 60px;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		&.left {
+			flex-direction: row;
+		}
+
+		&.right {
+			flex-direction: row-reverse;
+		}
+	}
+}
+
+.title-description {
+	width: 100%;
+	color: white;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	@include for-tablet-landscape-up {
+		width: 50%;
+		display: block;
+
+		&.left {
+			text-align: left;
+			padding-right: 30px;
+		}
+
+		&.right {
+			text-align: right;
+			padding-left: 30px;
+		}
+	}
+
+	.title {
+		display: inline-block;
+		font-size: 24px;
+		margin-bottom: 30px;
+
+		@include for-tablet-portrait-up {
+			font-size: 36px;
+			margin-bottom: 60px;
+		}
+
+		@include for-tablet-landscape-up {
+			margin-bottom: 40px;
+		}
+	}
+
+	.description {
+		font-size: 16px;
+		margin-bottom: 30px;
+
+		@include for-tablet-portrait-up {
+			margin-bottom: 60px;
+		}
+
+		@include for-tablet-landscape-up {
+			font-size: 18px;
+		}
+	}
+}
+
+.image-container {
+	position: relative;
+	width: 100%;
+
+	@include for-tablet-landscape-up {
+		width: 50%;
+	}
+
+	.image {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 90%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+
+	.hover-background {
+		visibility: hidden;
+		opacity: 0;
+		transition: all .25s $easeInOut;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	a.image {
+
+		&:hover {
+			.hover-background {
+				visibility: visible;
+				opacity: .5;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,124 @@
+@import 'styles/_colors.scss';
+
+.container {
+	white-space: nowrap;
+	display: flex;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	padding: 0;
+	border: none;
+	appearance: none;
+	outline: none;
+	background: transparent;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 8px;
+	box-sizing: border-box;
+
+	&:not(:last-child) {
+		margin-right: 15px;
+	}
+
+	&.borderless {
+		border: none;
+		margin-right: 0;
+	}
+}
+
+.always-white,
+.white-to-original,
+.white-to-red {
+	svg path {
+		fill: $white;
+	}
+
+	border-color: $white;
+}
+
+.black-to-red {
+	svg path {
+		fill: $black;
+	}
+
+	border-color: $black;
+}
+
+.white-to-original:hover {
+	&.twitter svg path {
+		fill: #1da1f2;
+	}
+
+	&.facebook svg path {
+		fill: #3B5998;
+	}
+
+	&.youtube svg path {
+		fill: #ff0000;
+	}
+
+	&.rss svg path {
+		fill: #f26522;
+	}
+
+	&.linkedin svg path {
+		fill: #0077b5;
+	}
+
+	&.instagram svg path {
+		fill: #c13584;
+	}
+
+	&.email svg path,
+	&.link svg path {
+		fill: $red;
+	}
+}
+
+.white-to-red:hover,
+.black-to-red:hover {
+	svg path {
+		fill: $red;
+	}
+	border-color: $red;
+}
+
+svg {
+	.twitter & {
+		height: 25px
+	}
+
+	.facebook & {
+		height: 25px
+	}
+
+	.youtube & {
+		height: 10px;
+	}
+
+	.rss & {
+		height: 12px;
+	}
+
+	.instagram & {
+		height: 25px
+	}
+
+	.linkedin & {
+		height: 12px;
+	}
+
+	.email & {
+		height: 25px
+	}
+
+	.link & {
+		height: 25px
+	}
+}

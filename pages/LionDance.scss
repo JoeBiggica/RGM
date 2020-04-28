@@ -1,0 +1,47 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.herobanner {
+	margin-top: 20px;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.page-header {
+	margin-bottom: 20px;
+
+	@include for-tablet-portrait-up {
+		padding: 0 75px;
+		margin-bottom: 30px;
+	}
+
+	@include for-tablet-landscape-up {
+		padding: 0 150px;
+	}
+}
+
+.article {
+	margin-bottom: 30px;
+}
+
+.clients-container {
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
+	@include for-tablet-portrait-up {
+		padding: 0 75px;
+		margin-bottom: 30px;
+	}
+
+	@include for-tablet-landscape-up {
+		padding: 0 150px;
+	}
+}

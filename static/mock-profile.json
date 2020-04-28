@@ -1,0 +1,34 @@
+{
+	"profile": {
+		"name": "Sifu Maurice Morrison",
+		"image": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-avatar.jpg",
+		"contact": {
+			"phone": "(754) 707-1898",
+			"email": "sifu.morrison@fonghungga.com"
+		},
+		"body": {
+			"items": [
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Sifu Morrison is a 5th generation Yap Sut (In-Room) Disciple of Master Bill Fong out of New York City. Sifu Morrison has been training in the martial arts for 30 years. He was initially introduced to Hung Ga in 1988 by a college friend and later joined Yee’s Hung Ga Kung Fu Association under Master Bill Fong in 1995 to continue his training. Sifu Morrison has studied other arts such as Shotokan Karate, Vee Jitsu Arnis and White Crane. Under Master Fong’s continued tutelage Sifu Morrison became an official instructor in 2000. In addition to Hung Kuen Sifu Morrison began in 2005 to learn and continue his training in the internal art of Taijiquan (Tai Chi) under Master Max Yan."
+					}
+				},
+				{
+					"type": "image",
+					"content": {
+						"size": "medium",
+						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/maurice-morrison/maurice-morrison-pose.jpg",
+						"caption": "Sifu Maurice Morrison training in the park."
+					}
+				},
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Sifu Morrison is currently teaching Hung Ga in South Florida. He has dedicated himself to sharing the art to those with the true desire to learn and work hard."
+					}
+				}
+			]
+		}
+	}	
+}

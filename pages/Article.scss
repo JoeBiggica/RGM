@@ -1,0 +1,33 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.herobanner {
+	margin-top: 20px;
+}
+
+.container {
+	padding-top: 30px;
+	padding-bottom: 60px;
+
+	@include for-tablet-portrait-up {
+		padding-top: 40px;
+	}
+}
+
+.article-header {
+	margin-bottom: 30px;
+
+	> h1,
+	> span {
+		padding: 0 20px;
+	}
+}
+
+.article-body {
+	padding: 0 20px;
+
+	@include for-tablet-portrait-up {
+		padding: 0;
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"locations": [
+		{
+			"name": "Fong's Hung Ga Kung Fu",
+			"head": {
+				"name": "Sifu Bill Fong",
+				"url": "/profile/sifu-bill-fong"
+			},
+			"address": {
+				"street": "95 Lincoln Ave",
+				"city": "Staten Island, New York",
+				"zipcode": "10306",
+				"google_maps_url": "https://goo.gl/maps/xCZ6vMvwBzzAvup3A"
+			},
+			"phone": "(718) 668-2478",
+			"email": "sifu.fong@fonghungga.com",
+			"class_schedule": true
+		},
+		{
+			"name": "Fong's Hung Ga Kung Fu",
+			"head": {
+				"name": "Sifu Bill Fong",
+				"url": "/profile/sifu-bill-fong"
+			},
+			"address": {
+				"street": "",
+				"city": "Central New Jersey",
+				"zipcode": ""
+			},
+			"phone": "(973) 204-6602",
+			"email": "sifu.fong@fonghungga.com"
+		},
+		{
+			"name": "Fong's Hung Ga Kung Fu",
+			"instructors": [
+				{
+					"name": "Sifu Maurice Morrison",
+					"url": "/profile/sifu-maurice-morrison"
+				}
+			],
+			"address": {
+				"street": "",
+				"city": "Broward County Florida",
+				"zipcode": ""
+			},
+			"phone": "(754) 707-1898",
+			"email": "sifu.morrison@fonghungga.com"
+		}
+	]
+}

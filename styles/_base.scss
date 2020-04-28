@@ -1,0 +1,64 @@
+// Base Styles
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+* {
+	font-family: 'Avenir', sans-serif;
+
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html,
+body {
+	font-size: 10px;
+}
+
+// Type Styles
+p {
+	font-size: 1.6rem;
+    line-height: 1.8em;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serifPublicoText-Roman-Web,Georgia,Cambria,"Times New Roman",Times,serif;
+
+	small {
+		font-size: .8em;
+	}
+}
+
+a {
+	transition: color .25s $easeInOut;
+	backface-visibility: hidden;
+	text-decoration: none;
+	color: $black;
+	font-family: inherit;
+
+	&:hover {
+		color: $red;
+		cursor: pointer;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		font-size: 1.6rem;
+	}
+}

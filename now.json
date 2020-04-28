@@ -1,0 +1,18 @@
+{
+	"version": 2,
+	"builds": [{
+		"src": "package.json",
+		"use": "@now/next"
+	}],
+	"routes": [
+		{"src": "/", "dest": "Index"},
+		{"src": "/classes", "dest": "Classes"},
+		{"src": "/liondance", "dest": "LionDance"},
+		{"src": "/liondance/request", "dest": "LionDanceRequest"},
+		{"src": "/about", "dest": "About"},
+		{"src": "/contact", "dest": "Contact"},
+		{ "src": "/article/(?<slug>[^/]+)", "dest": "Article?slug=$slug"},
+		{ "src": "/profile/(?<name>[^/]+)", "dest": "Profile?name=$name"},
+		{"src": "/events", "dest": "Events"}
+	]
+}

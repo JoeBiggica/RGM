@@ -1,0 +1,140 @@
+@import 'styles/_breakpoints.scss';
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.container {
+	padding: 0 20px;
+    width: 100%;
+    z-index: 2;
+
+	@include for-tablet-landscape-up {
+		padding: 0 60px;
+		top: 0;
+    	left: 0;
+	}
+
+	&.fixed {
+		position: fixed;
+
+	}
+
+	&.gradient {
+		background: linear-gradient(#000 30%, rgba(0, 0, 0, 0) 100%);
+	}
+
+	&.dark-mode {
+		a {
+			color: $white !important;
+		}
+	}
+}
+
+.inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner {
+	width: 300px;
+	height: 54px;
+	background-size: 100%;
+
+	@include for-tablet-portrait-up {
+		width: 500px;
+		height: 88px;
+	}
+}
+
+.nav {
+	margin-top: 20px;
+
+	@include for-tablet-portrait-up {
+		margin-top: 20px;
+	}
+
+	li {
+		font-size: 12px;
+		font-weight: bold;
+		display: inline-block;
+
+		@include for-tablet-portrait-up {
+			font-size: 18px;
+		}
+
+		&:not(:last-child) {
+			margin-right: 15px;
+
+			@include for-tablet-portrait-up {
+				margin-right: 35px;
+			}
+		}
+
+		&:hover,
+		&.active {
+			a {
+				color: $red;
+			}
+
+			.underline {
+				width: 100%;
+			}
+		}
+
+		.underline {
+			width: 0;
+			height: 2px;
+			background: $red;
+			margin: 0 auto;
+			transition: all .25s $easeInOut;
+		}
+	}
+}
+
+.menu-container {
+	margin-top: 30px;
+	display: none;
+
+	@include for-tablet-portrait-up {
+		display: none;
+	}
+
+	.button {
+		width: 34px;
+	    height: 34px;
+	    display: flex;
+	    justify-content: center;
+	    background: $blackest;
+	}
+
+	ul.menu {
+		visibility: hidden;
+		opacity: 0;
+		margin-top: 25px;
+		padding: 12px 10px;
+		position: absolute;
+		background: $blackest;
+		border: 1px solid $red;
+   		left: 50%;
+   		transform: translateX(-50%);
+   		transition: all .25s $easeInOut;
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	li {
+		font-size: 16px;
+		color: $white;
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@import 'styles/_colors.scss';
+@import 'styles/_eases.scss';
+
+.button {
+	width: 20px;
+	height: 20px;
+    border: 0;
+    padding: 0;
+    outline: 0;
+	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+
+	&,
+	&:before,
+	&:after {
+		width: 20px;
+		height: 2px;
+		background-color: $red;
+		border-radius: 3px;
+		transition: all .5s $easeOutCubic;
+	}
+
+    &:before,
+    &:after {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    }
+
+    &:before {
+        transform: translateY(-7px);
+    }
+
+    &:after {
+        transform: translateY(7px);
+    }
+}
+
+.button.active .hamburger {
+    background: transparent;
+
+    &:before {
+        transform: translateY(0) rotate(135deg);
+    }
+
+    &:after {
+        transform: translateY(0) rotate(225deg);
+    }
+}

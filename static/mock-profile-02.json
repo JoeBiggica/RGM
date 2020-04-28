@@ -1,0 +1,104 @@
+{
+	"mock_profile": {
+		"name": "Sifu Bill Fong",
+		"subtitle": "鄺偉林",
+		"image": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/bill-fong/bill-fong-avatar.jpg",
+		"contact": {
+			"phone": "(718) 668-2478",
+			"email": "sifu.fong@fonghungga.com"
+		},
+		"body": {
+			"items": [
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Sifu Bill Fong began his Martial Arts training under the tutelage of his Grandfather Gong Wai Fong of the Southern Siu Lum Village Kung Fu systems in his early teens.  Afterwards he trained under Master Frank Yee in the Yee’s Hung Ga version of Hung Kuen. Currently he is now continuing his pursuit of the Tang Fong version of the Hung Kuen style."
+					}
+				},
+				{
+					"type": "image",
+					"content": {
+						"size": "medium",
+						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/bill-fong/bill-fong-pose.jpg",
+						"caption": "Sifu Bill Fong practicing 8 Diagram Pole form."
+					}
+				},
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Through his travels and experiences he has been a very prominent figure within the Martial Arts community and has been associated with major organizations such as: United International Kung Fu Federation, United States Chinese Kuoshu Federation, Eastern United States Kung Fu Federation, Eastern USA Martial Arts Federation, International San Shou Kickboxing Federation, United International Kung Fu Federation of North America."
+					}
+				},
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Sifu Fong has been honored with Hall of Fame inductions in the United International Kung Fu Federation, Eastern USA Martial Arts Federation and World Karate Union.  Sifu Fong has also held previous official positions as former Vice-President, United International Kung Fu Federation and former assistant Deputy Secretary-General United International Kung Fu Federation of North America.  Through the United States Chinese Kuoshu Federation, he holds the Medal ‘B’ distinction and currently holds the title of Eastern United States Director of the United States Chinese KuoShu Federation (USCKSF)."
+					}
+				},
+				{
+					"type": "image",
+					"content": {
+						"size": "medium",
+						"src": "https://biggica-sites.s3.amazonaws.com/fongs-hung-ga/profiles/bill-fong/lion-dance-team.jpg",
+						"caption": "Fong's Hung Ga Lion Dance Team group photo in Chinatown NYC."
+					}
+				},
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "He is nationally known as a lion dance performer where he actively promotes the traditional style of the lion dance.  His team has been participating in many lion dances and has been requested to perform as far as West Virginia, USA.   They can be seen regularly during the Chinese new year in the streets of the famous New York City (NYC)  Chinatown. He is also teaching this art to people of all cultures and ethnicities thereby giving a greater appreciation for the lion dance and Chinese culture."
+					}
+				},
+				{
+					"type": "paragraph",
+					"content": {
+						"text": "Currently, he continues his pursuits and investigations in the traditional Chinese Hung Ga Kuen style."
+					}
+				},
+				{
+					"type": "subheader",
+					"content": {
+						"text": "Accomplishments:"
+					}
+				},
+				{
+					"type": "list",
+					"content": {
+						"items": [
+							{
+								"text": "Eastern Director United States Chinese Kuo Shu Federation"
+							},
+							{
+								"text": "World Hung Ga ambassador US Representative – International Chiu Chi Ling Hung Ga Kung Fu Association"
+							},
+							{
+								"text": "Honorary President Chow Wing Tak Hung Kuen Martial Arts Association"
+							},
+							{
+								"text": "Hall of Fame Committee Member United States Chinese Kuo Shu Federation"
+							},
+							{
+								"text": "Hall of Fame Inductee United International Kung Fu Federation"
+							},
+							{
+								"text": "Hall of Fame Inductee Eastern USA Martial Arts Federation"
+							},
+							{
+								"text": "Hall of Fame World Karate Union"
+							},
+							{
+								"text": "Former Vice President, United International Kung Fu Federation"
+							},
+							{
+								"text": "Former Assistant Deputy Secretary General United International Kung Fu Federation of North America"
+							},
+							{
+								"text": "Medal ‘B’ holder  from United States Chinese Kuo Shu Federation"
+							}
+						]
+					}
+				}
+			]
+		}
+	}	
+}
