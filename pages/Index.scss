@@ -14,16 +14,30 @@
     }
 }
 
-.main-container {
+.container {
 	display: flex;
     align-items: center;
 	width: 100%;
 	min-height: 100vh;
-    padding: 60px 30px;
-	background-color: $blacker;
-    background: linear-gradient(45deg, $blackest, $blacker, $purple);
-    background-size: 400%;
-    animation: gradient 20s ease infinite;
+    padding: 60px 20px;
+
+    &.main {
+        background-color: $blacker;
+        background: linear-gradient(45deg, $blackest, $blacker, $purple);
+        background-size: 400%;
+        animation: gradient 20s ease infinite;
+    }
+
+    &.info {
+        background: url('/static/city-background.png') top center / 100% no-repeat;
+        background-color: #080605;
+        flex-direction: column;
+        padding-top: 150px;
+
+        @include for-tablet-portrait-up {
+            padding-top: 24%;
+        }
+    }
 }
 
 .content {
@@ -31,7 +45,6 @@
     align-items: center;
     flex-direction: column;
 	width: 100%;
-    top: 30%;
     padding: 0 20px;
 }
 
@@ -68,4 +81,49 @@
 
 .social-buttons {
 	margin-top: 20px;
+}
+
+.info {
+    color: $white;
+
+    .content {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .line {
+        width: 300px;
+        height: 2px;
+        background: $purple;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 36px;
+
+        @include for-tablet-portrait-up {
+            font-size: 48px;
+        }
+    }
+
+    .info-line {
+        font-size: 18px;
+
+        @include for-tablet-portrait-up {
+            font-size: 32px;
+        }
+    }
+
+    .label {
+        padding: 8px;
+    }
+
+    iframe {
+        margin-top: 30px;
+        width: 100%;
+
+        @include for-tablet-portrait-up {
+            width: 500px;
+        }
+    }
 }

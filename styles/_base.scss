@@ -40,11 +40,11 @@ a {
 	transition: color .25s $easeInOut;
 	backface-visibility: hidden;
 	text-decoration: none;
-	color: $black;
+	color: $white;
 	font-family: inherit;
 
 	&:hover {
-		color: $red;
+		color: $purple;
 		cursor: pointer;
 	}
 

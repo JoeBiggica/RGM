@@ -13,7 +13,7 @@ function SpringImage(props) {
 		image_url
 	} = props;
 
-	const [dimensions, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
+	const [dimensions, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 2, tension: 250, friction: 40 } }));
 
 	const image_styles = {
 		backgroundImage: `url(${image_url})`,
