@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Button from 'components/button';
 import Social from 'components/social';
-
+import SpringImage from 'components/springimage';
 
 import styles from './Index.scss';
 
@@ -46,21 +46,21 @@ class Index extends Component {
 			router
 		} = this.props;
 
-		const logo_styles = {
-			background: `url(static/leakybarrel-logo.png) no-repeat center`,
-			backgroundSize: '100%'
+		const text_logo_styles = {
+			background: `url(static/leakybarrel-text-logo.png) center center / 100% no-repeat`
 		}
 
 		return (
 			<>
 				<section className={styles('main-container')}>
-{/*					<div className={styles('video-banner')}>
-						<iframe src='//www.youtube.com/embed/182EssGqBf0?start=33&controls=0&autoplay=1&mute=1&loop=1&playsinline=1&showinfo=0&rel=0&wmode=transparent&autohide=1&playlist=182EssGqBf0&enablejsapi=1' />
-					</div>*/}
 					<div className={styles('content')}>
-						<h1 style={{display: 'none'}}>Fong's Hung Ga</h1>
-						<div className={styles('logo')} style={logo_styles} />
-						<p className={styles('description')}>I promise, the water's fine.</p>
+						<h1 style={{display: 'none'}}>The Leaky Barrel</h1>
+						{/*<div className={styles('text-logo')} style={text_logo_styles}/>*/}
+						<SpringImage 
+							className={styles('logo')}
+							image_url='static/leakybarrel-full-logo.png' 
+						/>
+						{/*<p className={styles('description')}>I promise, the water's fine.</p>*/}
 						<Button
 							className={styles('buy-button')}
 							text='SHOP NOW'

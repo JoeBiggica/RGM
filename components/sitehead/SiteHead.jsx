@@ -55,7 +55,7 @@ class SiteHead extends PureComponent {
 
 				<meta name='msapplication-TileColor' content='#000000' />
 				<meta name='msapplication-config' content='none' />
-				<meta name='theme-color' content='#FF1815' />
+				<meta name='theme-color' content='#780C42' />
 
 				<link rel="canonical" href='https://leaky-barrel.now.sh' />
 				<link rel='shortcut icon' type='image/x-icon' href='https://leaky-barrel.now.sh/static/favicon/favicon.png' />
