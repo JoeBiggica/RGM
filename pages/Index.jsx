@@ -114,7 +114,7 @@ class Index extends Component {
 					<div className={styles('line')} /> 
 					<div className={styles('content')}>
 						<h2>Store Hours</h2>
-						<p className={styles('info-line')}>Monday - Saturday 10AM - 9PM</p>
+						<p className={styles('info-line')}>Monday - Saturday 11AM - 8PM</p>
 						<p className={styles('info-line')}>Sunday 12PM - 6PM</p>
 					</div>
 					<div className={styles('line')} />
