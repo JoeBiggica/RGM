@@ -11,11 +11,15 @@
 	.button {
 		display: block;
 		padding: 8px 10px;
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: bold;
 		border-radius: 5px;
 		width: 100%;
 		transition: background .25s $easeInOut;
+
+		@include for-tablet-portrait-up {
+	        font-size: 24px;
+	    }
 
 		&::after {
 			content: '';

@@ -51,7 +51,7 @@
 .logo {
 	width: 300px;
 	height: 175px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     @include for-tablet-portrait-up {
         width: 500px;
@@ -59,24 +59,9 @@
     }
 }
 
-.description {
-	font-size: 18px;
-	line-height: 28px;
-    color: $white;
-    text-align: center;
-    width: 100%;
-    max-width: 600px;
-    padding-top: 10px;
-    margin-bottom: 30px;
-
-    @include for-tablet-portrait-up {
-    	font-size: 21px;
-    	line-height: 31px;
-    }
-}
-
 .buy-button {
 	margin-bottom: 25px;
+    z-index: 9999;
 }
 
 .social-buttons {
@@ -91,6 +76,22 @@
         text-align: center;
     }
 
+    .subcontent {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 20px;
+
+            @include for-tablet-portrait-up {
+                font-size: 24px;
+                line-height: 30px;
+            }
+        }
+    }
+
     .line {
         width: 300px;
         height: 2px;
@@ -100,9 +101,45 @@
 
     h2 {
         font-size: 36px;
+        margin-bottom: 12px;
 
         @include for-tablet-portrait-up {
             font-size: 48px;
+        }
+    }
+
+    h3 {
+        display: inline-block;
+        font-size: 28px;
+        margin-bottom: 12px;
+        border-bottom: 2px solid $purple;
+
+        @include for-tablet-portrait-up {
+            font-size: 36px;
+        }
+    }
+
+    ul {
+
+    }
+
+    li {
+        text-align: center;
+        margin-bottom: 10px;
+
+        .label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }
+
+    .description {
+        font-size: 16px;
+        color: $lightergrey;
+        margin-bottom: 12px;
+
+        @include for-tablet-portrait-up {
+            font-size: 18px;
         }
     }
 
@@ -110,12 +147,12 @@
         font-size: 18px;
 
         @include for-tablet-portrait-up {
-            font-size: 32px;
+            font-size: 28px;
         }
     }
 
     .label {
-        padding: 8px;
+        padding-right: 8px;
     }
 
     iframe {

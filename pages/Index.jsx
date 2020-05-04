@@ -77,9 +77,45 @@ class Index extends Component {
 				</section>
 				<section className={styles('container', 'info')}>
 					<div className={styles('content')}>
+						<h2>Delivery</h2>
+						<div className={styles('subcontent')}>
+							<h3>Locations</h3>
+							<div className={styles('description')}>If you are looking for delivery, we deliver to these zip codes:</div>
+							<ul>
+								<li>
+									<p className={styles('label')}>$30 Minimum:</p>
+									<p>11214, 11209, 11228, 11204</p>
+								</li>
+								<li>
+									<p className={styles('label')}>$75 Minimum:</p>
+									<p>11220, 11219, 11223</p>
+								</li>
+								<li>
+									<p className={styles('label')}>$150 Minimum:</p>
+									<p>11232, 11218, 11230, 11229, 11235, 11224</p>
+								</li>
+							</ul>
+						</div>
+						<div className={styles('subcontent')}>
+							<h3>Hours</h3>
+							<div className={styles('description')}>If you place an order outside of these hours, it will be delivered the next day.</div>
+							<ul>
+								<li>
+									<p className={styles('label')}>Mon-Sat</p>
+									<p>12PM-7PM</p>
+								</li>
+								<li>
+									<p className={styles('label')}>Sun</p>
+									<p>12PM-5PM</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div className={styles('line')} /> 
+					<div className={styles('content')}>
 						<h2>Store Hours</h2>
-						<div className={styles('info-line')}>Monday - Saturday 10AM - 9PM</div>
-						<div className={styles('info-line')}>Sunday 12PM - 6PM</div>
+						<p className={styles('info-line')}>Monday - Saturday 10AM - 9PM</p>
+						<p className={styles('info-line')}>Sunday 12PM - 6PM</p>
 					</div>
 					<div className={styles('line')} />
 					<div className={styles('content')}>
@@ -100,8 +136,8 @@ class Index extends Component {
 						<h2>Location</h2>
 						<div className={styles('info-line')}>
 							<a href='https://g.page/leakybarrel?share' target='_blank'>
-							<div>7611 New Utrecht Ave</div>
-							<div>Brooklyn NY 11214</div>
+							<p>7611 New Utrecht Ave</p>
+							<p>Brooklyn NY 11214</p>
 							</a>
 						</div>
 						<iframe 
