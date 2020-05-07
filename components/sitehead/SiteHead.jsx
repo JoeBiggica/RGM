@@ -28,7 +28,7 @@ class SiteHead extends PureComponent {
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'UA-158726478-1');
+		gtag('config', 'UA-165823635-1');
 	}
 
 	render() {
@@ -64,8 +64,7 @@ class SiteHead extends PureComponent {
 				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon-48x48.png' sizes='48x48' />
 				<link rel='icon' type='image/png' href='https://leaky-barrel.now.sh/static/favicon/favicon-96x96.png' sizes='96x96' />
 
-					
-				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158726478-1"></script>
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"></script>
 
 				{this.props.meta.map(this.renderTag)}
 			</Head>
