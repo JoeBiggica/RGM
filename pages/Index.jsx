@@ -145,7 +145,7 @@ class Index extends Component {
 							width='600' 
 							height='450' 
 							frameBorder='0' 
-							allowFullscreen=''
+							allowFullScreen=''
 							tabIndex='0'
 						/>
 					</div>
