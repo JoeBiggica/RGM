@@ -94,6 +94,9 @@ class Index extends Component {
 									<p className={styles('label')}>$150 Minimum:</p>
 									<p>11232, 11218, 11230, 11229, 11235, 11224</p>
 								</li>
+								<li>
+									<div className={styles('delivery-disclaimer')}>If you fall out of these delivery zip codes please don’t hesitate to still call the shop at <a href='tel:7182560346'>(718) 256-0346</a></div>
+								</li>
 							</ul>
 						</div>
 						<div className={styles('subcontent')}>
