@@ -21,7 +21,7 @@ app
 	    //server start with next routing
 	    server.use(handler).listen(2222, (err) => {
 	    	if (err) throw err
-	    		console.log('SSR Server ready on http://localhost:2222')
+	    		console.log('SSR Server ready on http://localhost:3333')
 	    });
 	})
 	.catch((ex) => {
