@@ -41,7 +41,7 @@ class SiteHead extends PureComponent {
 				<title>The Leaky Barrel</title>
 
 				<meta name='description' content="The Leaky Barrel" />
-				<meta name='keywords' content='' />
+				<meta name='keywords' content='leakybarrel,leakybarrel liquor,the leaky barrel,leaky barrel bk,bkny liquor,liquor store,liquor store bk,liquor store brooklyn,brooklyn liquor,beer,wine,wines and spirits,brooklyn wine,water exodus wine,water exodus,castlevania,water exodus castlevania,have you beat cv4 before,castlevania lords of shadow lets play,water detectivous,water activist,water jealousness,water rebellious' />
 
 				<meta name='twitter:card' content='summary_large_image' />
 				<meta name='twitter:image' content={`https://${domain}/static/leakybarrel-social-logo.png`} />
