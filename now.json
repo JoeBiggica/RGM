@@ -1,4 +1,5 @@
 {
+	"name": "rgm",
 	"version": 2,
 	"builds": [{
 		"src": "package.json",
