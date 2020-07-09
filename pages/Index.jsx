@@ -47,7 +47,7 @@ class Index extends Component {
 		} = this.props;
 
 		const logo_styles = {
-			background: `url(static/rgm-logo_4.png) center center / 100% no-repeat`
+			background: `url(static/rgm-logo.png) center center / 100% no-repeat`
 		}
 
 		return (
@@ -59,7 +59,7 @@ class Index extends Component {
 						<div className={styles['social-buttons']}>
 							<Social
 								platforms={['instagram', 'email']}
-								urls={['https://instagram.com/reliableglassmetal', 'mailto:rgm.jesse@gmail.com']}
+								urls={['https://instagram.com/reliableglassandmetal', 'mailto:rgm.jesse@gmail.com']}
 								color={Social.Color.WHITE_TO_RED}
 							/>
 						</div>
