@@ -55,6 +55,7 @@ class Index extends Component {
 				<section className={styles('main', 'container')}>
 					<div className={styles('content')}>
 						<h1 style={{display: 'none'}}>RGM Reliable Glass and Metal</h1>
+						<div className={styles('construction')} />
 						<div className={styles('logo')} style={logo_styles}/>
 						<div className={styles['social-buttons']}>
 							<Social
