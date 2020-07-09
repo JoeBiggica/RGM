@@ -1,5 +1,5 @@
 # Windows
-## The Leaky Barrel Website
+## The RGM Website
 
 ## Quick Start
 ### Install dependencies and run app
