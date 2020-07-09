@@ -15,6 +15,7 @@
 }
 
 .container {
+    position: relative;
 	display: flex;
     align-items: center;
 	width: 100%;
@@ -22,20 +23,12 @@
     padding: 60px 20px;
 
     &.main {
-        background-color: $blacker;
-        background: linear-gradient(45deg, $blackest, $blacker, $purple);
-        background-size: 400%;
-        animation: gradient 20s ease infinite;
-    }
+        background: url('/static/rgm-glass-clouds.jpg') no-repeat center;
+        background-size: cover;
 
-    &.info {
-        background: url('/static/city-background.png') top center / 100% no-repeat;
-        background-color: #080605;
-        flex-direction: column;
-        padding-top: 150px;
-
-        @include for-tablet-portrait-up {
-            padding-top: 24%;
+        @include for-phone-only  {
+            background: url('/static/rgm-glass-clouds-mobile.jpg') no-repeat center;
+            background-size: cover;
         }
     }
 }
@@ -50,127 +43,11 @@
 
 .logo {
 	width: 300px;
-	height: 175px;
+	height: 125px;
     margin-bottom: 40px;
 
     @include for-tablet-portrait-up {
         width: 500px;
-        height: 295px;
-    }
-}
-
-.buy-button {
-	margin-bottom: 25px;
-    z-index: 9999;
-}
-
-.social-buttons {
-	margin-top: 20px;
-}
-
-.info {
-    color: $white;
-
-    .content {
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .subcontent {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 20px;
-
-            @include for-tablet-portrait-up {
-                font-size: 24px;
-                line-height: 30px;
-            }
-        }
-    }
-
-    .line {
-        width: 300px;
-        height: 2px;
-        background: $purple;
-        margin-bottom: 30px;
-    }
-
-    h2 {
-        font-size: 36px;
-        margin-bottom: 12px;
-
-        @include for-tablet-portrait-up {
-            font-size: 48px;
-        }
-    }
-
-    h3 {
-        display: inline-block;
-        font-size: 28px;
-        margin-bottom: 12px;
-        border-bottom: 2px solid $purple;
-
-        @include for-tablet-portrait-up {
-            font-size: 36px;
-        }
-    }
-
-    ul {
-
-    }
-
-    li {
-        text-align: center;
-        margin-bottom: 10px;
-
-        .label {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-    }
-
-    .description {
-        font-size: 16px;
-        color: $lightergrey;
-        margin-bottom: 12px;
-
-        @include for-tablet-portrait-up {
-            font-size: 18px;
-        }
-    }
-
-    .delivery-disclaimer {
-        max-width: 500px;
-        font-size: 16px;
-        margin-bottom: 12px;
-
-        @include for-tablet-portrait-up {
-            font-size: 18px;
-        }
-    }
-
-    .info-line {
-        font-size: 18px;
-
-        @include for-tablet-portrait-up {
-            font-size: 28px;
-        }
-    }
-
-    .label {
-        padding-right: 8px;
-    }
-
-    iframe {
-        margin-top: 30px;
-        width: 100%;
-
-        @include for-tablet-portrait-up {
-            width: 500px;
-        }
+        height: 210px;
     }
 }

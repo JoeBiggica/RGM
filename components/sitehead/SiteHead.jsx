@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 
-const domain = 'www.theleakybarrel.com';
+const domain = 'www.reliableglassandmetal.com';
 
 class SiteHead extends PureComponent {
 
@@ -38,20 +38,20 @@ class SiteHead extends PureComponent {
 				<meta httpEquiv='x-dns-prefetch-control' content='on' />
 				<meta name='viewport' content='width=device-width, user-scalable=no' />
 				<meta name='robots' content='index, follow' />
-				<title>The Leaky Barrel</title>
+				<title>Reliable Glass & Metal</title>
 
-				<meta name='description' content="The Leaky Barrel" />
-				<meta name='keywords' content='leakybarrel,leakybarrel liquor,the leaky barrel,leaky barrel bk,bkny liquor,liquor store,liquor store bk,liquor store brooklyn,brooklyn liquor,beer,wine,wines and spirits,brooklyn wine,water exodus wine,water exodus,castlevania,water exodus castlevania,have you beat cv4 before,castlevania lords of shadow lets play,water detectivous,water activist,water jealousness,water rebellious' />
+				<meta name='description' content="Reliable Glass & Metal" />
+				<meta name='keywords' content='rgm,reliable glass and metal,rgm glass,rgm windows,rgm fire levitcus' />
 
 				<meta name='twitter:card' content='summary_large_image' />
-				<meta name='twitter:image' content={`https://${domain}/static/leakybarrel-social-logo.png`} />
+				<meta name='twitter:image' content={`https://${domain}/static/rgm-social-logo.png`} />
 
 				<meta property="fb:app_id" content="926660327777500"/>
-				<meta name='og:title' property="The Leaky Barrel" />
-				<meta property='og:description' content="The Leaky Barrel Wines and Spirits website" />
+				<meta name='og:title' property="Reliable Glass & Metal" />
+				<meta property='og:description' content="Reliable Glass & Metal" />
 				<meta property="og:type" content="website" />
 				<meta property='og:url' content={`https://${domain}/`} />
-				<meta property='og:image' content={`https://${domain}/static/leakybarrel-social-logo.png`} />
+				<meta property='og:image' content={`https://${domain}/static/rgm-social-logo.png`} />
 
 				<meta name='msapplication-TileColor' content='#000000' />
 				<meta name='msapplication-config' content='none' />
