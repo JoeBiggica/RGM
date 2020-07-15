@@ -60,3 +60,51 @@
         height: 210px;
     }
 }
+
+.spectrum-takeover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+    opacity: 0;
+    transition: height .1s ease-in-out;
+    transition: opacity .5s ease-in-out 1s;
+    overflow: hidden;
+
+    &.yellow {
+        background: yellow;
+    }
+
+    &.blue {
+        background: blue;
+    }
+
+    &.red {
+        background: red;
+    }
+
+    .medallion {
+        width: 400px;
+        height: 400px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.yellow {
+            background-image: url('/static/yellow-medallion.png');
+        }
+
+        &.blue {
+            background-image: url('/static/water-medallion.png');
+        }
+
+        &.red {
+            background-image: url('/static/fire-medallion.png');
+        }
+    }
+}
