@@ -1,11 +1,17 @@
 @import 'styles/_breakpoints.scss';
 @import 'styles/_colors.scss';
 @import 'styles/_eases.scss';
+@import 'styles/_fonts.scss';
 
-.card {
+.container {
+	position: relative;
+}
+
+.image {
+	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-size: 90%;
+	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
@@ -13,6 +19,24 @@
 	will-change: transform;
 }
 
-.card:hover {
+.image:hover {
 	box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.title {
+	position: absolute;
+	top: 10px;
+    right: -20px;
+    padding: 2px 8px;
+	color: #fff;
+	background: rgba(0, 0, 0, .7);
+	@include futura;
+	font-size: 24px;
+	text-align: center;
+	z-index: 1;
+
+	@include for-phone-only {
+		font-size: 18px;
+		right: -10px;
+	}
 }

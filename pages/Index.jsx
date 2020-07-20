@@ -8,6 +8,7 @@ import Head from 'next/head';
 import Button from 'components/button';
 import Social from 'components/social';
 import SpringImage from 'components/springimage';
+import Gallery from 'component-library/lib/gallery';
 
 import styles from './Index.scss';
 

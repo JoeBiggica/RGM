@@ -1,6 +1,26 @@
-/*Oswald Webfont*/
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+@mixin avenir-light {
+	font-family: 'Avenir', helvetica, arial, sans-serif;
+	font-weight: lighter;	
+}
 
-@font-face {
-	font-family: 'Oswald', sans-serif;
+@mixin avenir {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
+}
+
+@mixin avenir-bold {
+	font-family: 'Avenir', helvetica, arial, sans-serif;	
+	font-weight: bold;
+}
+
+@mixin futura {
+	font-family: 'Futura', helvetica, arial, sans-serif;	
+}
+
+@mixin georgia {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;	
+}
+
+@mixin georgia-bold {
+	font-family: 'Georgia', 'Times New Roman', sans-serif;
+	font-weight: bold;
 }

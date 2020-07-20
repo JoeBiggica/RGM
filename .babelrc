@@ -31,6 +31,7 @@
           "actions": "./redux/actions",
           "utils": "./utils",
           "styles": "./styles",
+          "component-library": "./submodules/component-library"
         }
       }
     ],
