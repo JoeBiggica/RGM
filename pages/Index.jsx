@@ -184,6 +184,53 @@ class Index extends Component {
 		})
 
 
+		const images = [
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.jpg"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.jpg"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.jpg"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01.png"
+			},
+			{
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02.png"
+			}
+		];
 
 		return (
 			<>
@@ -201,6 +248,15 @@ class Index extends Component {
 						</div>
 					</div>
 				</section>
+				<section className={styles('container')}>
+					<div className={styles('content', 'portfolio')}>
+						<div className={styles('pageheader')}>Gallery</div>
+						<Gallery
+							images={images}
+						/>
+					</div>
+				</section>
+
 				{this.state.enter_a_son &&
 					<div className={spectrum_takeover_classnames} style={this.state.spectrum_styles}>
 						<div className={medallion_classnames} />
