@@ -23,7 +23,7 @@
     padding: 60px 20px;
 
     &.main {
-        background: url('/static/rgm-glass-clouds.jpg') no-repeat center;
+        background: url('/static/rgm-glass-clouds.png') no-repeat center;
         background-size: cover;
 
         @include for-phone-only  {

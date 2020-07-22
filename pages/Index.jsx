@@ -186,49 +186,64 @@ class Index extends Component {
 
 		const images = [
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.jpg"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.jpg"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.jpg"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01-small.png"
 			},
 			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02.png"
+				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02.png",
+				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02-small.png"
 			}
 		];
 
