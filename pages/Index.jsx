@@ -5,6 +5,7 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Head from 'next/head';
+import Header from 'components/header';
 import Social from 'components/social';
 import SpringImage from 'components/springimage';
 import Gallery from 'component-library/lib/gallery';
@@ -185,6 +186,11 @@ class Index extends Component {
 		return (
 			<>
 				<div className={styles('wrapper')}>
+					<Header 
+						router={router}
+						position={Header.Position.ABSOLUTE}
+						nav_alignment={Header.NavAlignment.RIGHT}
+					/>
 					<section className={styles('main', 'container')}>
 						<div className={styles('content')}>
 							<h1 style={{display: 'none'}}>RGM Reliable Glass and Metal</h1>

@@ -111,12 +111,17 @@ class Header extends PureComponent {
 		return (
 			<div className={container_classname}>
 				<div className={inner_classname}>
-					<a href='/'>
-						<img 
-							className={classnames(styles['logo'])}
-							src='static/rgm-logo.png'
-						/>
-					</a>
+					<div>
+						{ logo && 
+							<a href='/'>
+								<img 
+									className={classnames(styles['logo'])}
+									src={logo}
+								/>
+							</a>
+						}
+					</div>
+					
 					<nav className={classnames(styles['nav'])}>
 						<ul>
 							{this.menu_items.map(this.renderMenuItem)}
