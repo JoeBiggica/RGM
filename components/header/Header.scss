@@ -73,6 +73,8 @@
 
 .nav {
 	margin-top: 20px;
+	background: rgba(255, 0, 0, 0.7);
+    padding: 4px 7px;
 
 	@include for-tablet-portrait-up {
 		margin-top: 20px;
@@ -98,7 +100,7 @@
 		&:hover,
 		&.active {
 			a {
-				color: $red;
+				color: $black;
 			}
 
 			.underline {
@@ -106,13 +108,13 @@
 			}
 		}
 
-		.underline {
-			width: 0;
-			height: 2px;
-			background: $red;
-			margin: 0 auto;
-			transition: all .25s $easeInOut;
-		}
+		// .underline {
+		// 	width: 0;
+		// 	height: 2px;
+		// 	background: $black;
+		// 	margin: 0 auto;
+		// 	transition: all .25s $easeInOut;
+		// }
 	}
 }
 

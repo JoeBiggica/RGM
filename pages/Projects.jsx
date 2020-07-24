@@ -103,7 +103,7 @@ class Projects extends Component {
 					text_position={HeroBanner.TextPosition.BOTTOM}
 					text_gradient={HeroBanner.TextGradient.BOTTOM}
 					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png'
-					background_position={HeroBanner.BackgroundPosition.TOP}
+					background_position={HeroBanner.BackgroundPosition.CENTER}
 					background_gradient={HeroBanner.BackgroundGradient.NONE}
 					hero_height={HeroBanner.HeroHeight.FULL}	
 				/>

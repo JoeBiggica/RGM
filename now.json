@@ -16,6 +16,14 @@
 		{
 			"src": "/about",
 			"dest": "About"
+		},
+		{
+			"src": "/services",
+			"dest": "Services"
+		},
+		{
+			"src": "/contact",
+			"dest": "Contact"
 		}
 	]
 }
