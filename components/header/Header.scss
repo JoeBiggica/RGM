@@ -45,11 +45,18 @@
 	@include for-tablet-portrait-up {
 		&.nav-left {
 
+			.nav {
+				margin-top: 0;
+			}
 		}
 
 		&.nav-right {
 			flex-direction: row;
 			justify-content: space-between;	
+
+			.nav {
+				margin-top: 0;
+			}
 		}
 	}
 	
@@ -73,8 +80,6 @@
 
 .nav {
 	margin-top: 20px;
-	background: rgba(255, 0, 0, 0.7);
-    padding: 4px 7px;
 
 	@include for-tablet-portrait-up {
 		margin-top: 20px;
@@ -84,6 +89,11 @@
 		font-size: 14px;
 		font-weight: bold;
 		display: inline-block;
+
+		// custom
+		background: rgba(255, 0, 0, 0.7);
+	    padding: 2px 6px;
+	    border-radius: 3px;
 
 		@include for-tablet-portrait-up {
 			font-size: 18px;
@@ -99,8 +109,9 @@
 
 		&:hover,
 		&.active {
+			background: rgb(255, 255, 255);
 			a {
-				color: $blackest;
+				color: $red;
 			}
 
 			.underline {
