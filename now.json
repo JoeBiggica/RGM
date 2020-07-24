@@ -12,6 +12,10 @@
 		{
 			"src": "/projects",
 			"dest": "Projects"
+		},
+		{
+			"src": "/about",
+			"dest": "About"
 		}
 	]
 }
