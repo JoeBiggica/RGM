@@ -23,10 +23,10 @@ class SiteHead extends PureComponent {
 	);
 
 	componentDidMount() {
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'UA-165823635-1');
+		// window.dataLayer = window.dataLayer || [];
+		// function gtag(){dataLayer.push(arguments);}
+		// gtag('js', new Date());
+		// gtag('config', 'UA-165823635-1');
 	}
 
 	render() {
@@ -66,7 +66,7 @@ class SiteHead extends PureComponent {
 
 				{/*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"></script>*/}
 
-				{this.props.meta.map(this.renderTag)}
+				{/*{this.props.meta.map(this.renderTag)}*/}
 			</Head>
 		);
 	}

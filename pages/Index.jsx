@@ -5,7 +5,6 @@ import { withRouter } from 'next/router';
 import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Head from 'next/head';
-import Button from 'components/button';
 import Social from 'components/social';
 import SpringImage from 'components/springimage';
 import Gallery from 'component-library/lib/gallery';
@@ -175,108 +174,38 @@ class Index extends Component {
 			'yellow': enter_thunder,
 			'blue': enter_water,
 			'red': enter_fire
-		})
+		});
 
 		const medallion_classnames = styles('medallion', {
 			'yellow': enter_thunder,
 			'blue': enter_water,
 			'red': enter_fire
-		})
-
-
-		const images = [
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/cwiss-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/mirrors-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/railings-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-02-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-03-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/shower-04-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01-small.png"
-			},
-			{
-				"url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02.png",
-				"small_url": "https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-02-small.png"
-			}
-		];
+		});
 
 		return (
 			<>
-				<section className={styles('main', 'container')}>
-					<div className={styles('content')}>
-						<h1 style={{display: 'none'}}>RGM Reliable Glass and Metal</h1>
-						<div className={styles('construction')} />
-						<div className={styles('logo')} style={logo_styles}/>
-						<div className={styles['social-buttons']}>
-							<Social
-								platforms={['instagram', 'email']}
-								urls={['https://instagram.com/reliableglassandmetal', 'mailto:rgm.jesse@gmail.com']}
-								color={Social.Color.WHITE_TO_RED}
-							/>
+				<div className={styles('wrapper')}>
+					<section className={styles('main', 'container')}>
+						<div className={styles('content')}>
+							<h1 style={{display: 'none'}}>RGM Reliable Glass and Metal</h1>
+							<div className={styles('construction')} />
+							<div className={styles('logo')} style={logo_styles}/>
+							<div className={styles['social-buttons']}>
+								<Social
+									platforms={['instagram', 'email']}
+									urls={['https://instagram.com/reliableglassandmetal', 'mailto:rgm.jesse@gmail.com']}
+									color={Social.Color.WHITE_TO_RED}
+								/>
+							</div>
 						</div>
-					</div>
-				</section>
-				<section className={styles('container')}>
-					<div className={styles('content', 'portfolio')}>
-						<div className={styles('pageheader')}>Gallery</div>
-						<Gallery
-							images={images}
-						/>
-					</div>
-				</section>
+					</section>
 
-				{this.state.enter_a_son &&
-					<div className={spectrum_takeover_classnames} style={this.state.spectrum_styles}>
-						<div className={medallion_classnames} />
-					</div>
-				}
+					{this.state.enter_a_son &&
+						<div className={spectrum_takeover_classnames} style={this.state.spectrum_styles}>
+							<div className={medallion_classnames} />
+						</div>
+					}
+				</div>
 			</>
 		)
 	}

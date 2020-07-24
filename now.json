@@ -5,6 +5,13 @@
 		"use": "@now/next"
 	}],
 	"routes": [
-		{"src": "/", "dest": "Index"}
+		{
+			"src": "/", 
+			"dest": "Index"
+		},
+		{
+			"src": "/projects",
+			"dest": "Projects"
+		}
 	]
 }

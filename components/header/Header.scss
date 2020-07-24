@@ -13,9 +13,12 @@
     	left: 0;
 	}
 
+	&.absolute {
+		position: absolute;
+	}
+
 	&.fixed {
 		position: fixed;
-
 	}
 
 	&.gradient {
@@ -38,17 +41,31 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	&.nav-left {
+
+	}
+
+	&.nav-right {
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
 
-.banner {
-	width: 300px;
-	height: 54px;
-	background-size: 100%;
+// .banner {
+// 	width: 300px;
+// 	height: 54px;
+// 	background-size: 100%;
 
-	@include for-tablet-portrait-up {
-		width: 500px;
-		height: 88px;
-	}
+// 	@include for-tablet-portrait-up {
+// 		width: 500px;
+// 		height: 88px;
+// 	}
+// }
+
+.logo {
+
+	width: 125px;
 }
 
 .nav {

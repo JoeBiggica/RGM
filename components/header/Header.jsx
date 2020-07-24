@@ -1,17 +1,40 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
+
 import HamburgerButton from './hamburgerbutton';
 
 import styles from './Header.scss';
+
+const Position = {
+	RELATIVE: 'relative',
+	ABSOLUTE: 'absolute',
+	FIXED: 'fixed'
+};
+
+const NavAlignment = {
+	LEFT: 'left',
+	RIGHT: 'right',
+	CENTER: 'center'
+};
 
 class Header extends PureComponent {
 
 	static propTypes = {
 		router: PropTypes.object,
+		position: PropTypes.string,
+		nav_alignment: PropTypes.string,
 		gradient: PropTypes.bool,
-		fixed: PropTypes.bool,
 		dark_mode: PropTypes.bool,
 	}
+
+	static defaultProps = {
+		position: Position.RELATIVE,
+		nav_alignment: NavAlignment.RIGHT
+	}
+
+	static Position = Position;
+	static NavAlignment = NavAlignment;
 
 	state = {
 		menu_active: false,
@@ -24,26 +47,21 @@ class Header extends PureComponent {
 
 		this.menu_items = [
 			{
-				name: 'Home',
-				id: 'index',
-			},
-			{
-				name: 'Classes',
-				id: 'classes',
-			},
-			{
-				name: 'Lion Dance',
-				id: 'liondance',
-			},
-			{
 				name: 'About',
 				id: 'about',
 			},
 			{
+				name: 'Services',
+				id: 'services',
+			},
+			{
+				name: 'Projects',
+				id: 'projects',
+			},
+			{
 				name: 'Contact',
 				id: 'contact',
-			},
-			
+			}
 		];
 	}
 
@@ -53,11 +71,11 @@ class Header extends PureComponent {
 
 	renderMenuItem = item => {
 		const path = item.id === 'index' ? '/' : `/${item.id}`; 
-		const item_classname = styles({'active': item.id === this.route});
+		const item_classname = classnames(styles[item.id === this.route && 'active']);
 		return (
 			<li className={item_classname} key={`${item.id}`}>
 				<a href={`${path}`}>{item.name}</a>
-				<div className={styles('underline')} />
+				<div className={classnames(styles['underline'])} />
 			</li>
 		);
 	}
@@ -65,38 +83,45 @@ class Header extends PureComponent {
 	render() {
 		const {
 			className,
+			position,
+			nav_alignment,
 			gradient,
-			fixed,
 			dark_mode,
+			logo
 		} = this.props;
 
-		const container_classname = styles('container', {
-			'gradient': gradient,
-			'fixed': fixed,
-			'dark-mode': dark_mode,
-		});
+		const container_classname = classnames(
+			styles['container'],
+			styles[position === 'absolute' && 'absolute'],
+			styles[position === 'fixed' && 'fixed'],
+			styles[gradient && 'gradient'],
+			styles[dark_mode && 'dark-mode'],
+		);
 
-		const banner_styles = {
-			backgroundImage: `url(/static/fongs-banner-logo-long.png)`,
-			backgroundRepeat: 'no-repeat',
-			backgroundPosition: 'center'
+		const inner_classname = classnames(
+			styles['inner'],
+			styles[nav_alignment === 'left' && 'nav-left'],
+			styles[nav_alignment === 'right' && 'nav-right']
+		);
+
+		const logo_styles = {
+			background: `url(static/rgm-logo.png) center center / 100% no-repeat`
 		};
 
 		return (
 			<div className={container_classname}>
-				<div className={styles('inner')}>
-					<div className={styles('banner')} style={banner_styles} />
-					<nav className={styles('nav')}>
+				<div className={inner_classname}>
+					<a href='/'>
+						<img 
+							className={classnames(styles['logo'])}
+							src='static/rgm-logo.png'
+						/>
+					</a>
+					<nav className={classnames(styles['nav'])}>
 						<ul>
 							{this.menu_items.map(this.renderMenuItem)}
 						</ul>
 					</nav>
-					<div className={styles('menu-container')}>
-						<HamburgerButton className={styles('button')} onClick={this.onClick} />
-						<ul className={styles('menu', {'active': this.state.menu_active})}>
-							{this.menu_items.map(this.renderMenuItem)}
-						</ul>
-					</div>
 				</div>
 			</div>
 		);	
