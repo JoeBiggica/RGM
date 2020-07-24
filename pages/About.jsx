@@ -4,7 +4,10 @@ import { bindActionCreators } from 'redux';
 import { withRouter } from 'next/router';
 
 import Header from 'components/header';
+import PageHeader from 'components/pageheader';
+
 import HeroBanner from 'component-library/lib/herobanner';
+import TextLabel from 'component-library/lib/textlabel';
 
 import styles from './About.scss';
 
@@ -45,7 +48,17 @@ class About extends Component {
 				/>
 				<section className={styles('container')}>
 					<div className={styles('content')}>
-						
+						<PageHeader
+							className={styles('pageheader')}
+							title='About Us'
+							background_color='rgba(255, 0, 0, 0.7)'
+							background_skew
+						/>
+						<TextLabel
+							className={styles('about-body')}
+							font={TextLabel.Font.GEORGIA}
+							text='Reliable Glass & Metal is more than just your average glass and metal company, it’s the vision of people who not only work in the industry, but who were raised in the industry. RGM offers highly specialized project managers who are with you from start to finish. This expertise is delivered to all projects regardless of scope or intricacy.'
+						/>
 					</div>
 				</section>
 

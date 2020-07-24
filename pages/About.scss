@@ -4,29 +4,39 @@
 
 .container {
     position: relative;
-	display: flex;
-    align-items: center;
 	width: 100%;
 	min-height: 100vh;
     padding: 60px 20px;
+
+    &.centered {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .content {
-	display: flex;
-    align-items: center;
-    flex-direction: column;
 	width: 100%;
     padding: 0 20px;
+    max-width: 950px;
+    margin: 0 auto 60px;
+
+    &.centered {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
-// About
-.portfolio {
-    max-width: 950px;
-    margin: 0 auto;
+.about-body {
+    font-size: 24px;
+    line-height: 34px;
+
+    @include for-phone-only {
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 .pageheader {
-    font-size: 36px;
-    font-weight: bold;
     margin-bottom: 40px;
 }
