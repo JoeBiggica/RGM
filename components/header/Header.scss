@@ -38,8 +38,8 @@
 	height: 100%;
 	padding-top: 20px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-between;	
 	align-items: center;
 
 	@include for-tablet-portrait-up {
@@ -51,8 +51,6 @@
 		}
 
 		&.nav-right {
-			flex-direction: row;
-			justify-content: space-between;	
 
 			.nav {
 				margin-top: 0;
@@ -80,8 +78,10 @@
 
 .nav {
 	margin-top: 20px;
+	display: none;
 
 	@include for-tablet-portrait-up {
+		display: block;
 		margin-top: 20px;
 	}
 
@@ -129,9 +129,9 @@
 	}
 }
 
+// Mobile Menu
 .menu-container {
-	margin-top: 30px;
-	display: none;
+	display: block;
 
 	@include for-tablet-portrait-up {
 		display: none;
@@ -142,7 +142,8 @@
 	    height: 34px;
 	    display: flex;
 	    justify-content: center;
-	    background: $blackest;
+	    align-items: center;
+	    background: $white;
 	}
 
 	ul.menu {
@@ -151,9 +152,8 @@
 		margin-top: 25px;
 		padding: 12px 10px;
 		position: absolute;
-		background: $blackest;
+		background: $white;
 		border: 1px solid $red;
-   		left: 50%;
    		transform: translateX(-50%);
    		transition: all .25s $easeInOut;
 
@@ -165,9 +165,14 @@
 
 	li {
 		font-size: 16px;
-		color: $white;
+		color: $red;
+
 		&:not(:last-child) {
 			margin-bottom: 10px;
+		}
+
+		a {
+			color: $red;
 		}
 	}
 }

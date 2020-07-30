@@ -104,7 +104,7 @@ class Projects extends Component {
 					text_gradient={HeroBanner.TextGradient.BOTTOM}
 					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
-					background_gradient={HeroBanner.BackgroundGradient.NONE}
+					background_gradient={HeroBanner.BackgroundGradient.TOP}
 					hero_height={HeroBanner.HeroHeight.THREE_QUARTER}	
 				/>
 				<section className={styles('container')}>

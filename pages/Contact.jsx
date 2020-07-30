@@ -9,11 +9,11 @@ import PageHeader from 'components/pageheader';
 import HeroBanner from 'component-library/lib/herobanner';
 import TextLabel from 'component-library/lib/textlabel';
 
-import styles from './About.scss';
+import styles from './Contact.scss';
 
 import PropTypes from 'prop-types';
 
-class About extends Component {
+class Contact extends Component {
 	static getInitialProps ({ reduxStore, req }) {
 		const isServer = !!req
 
@@ -38,7 +38,7 @@ class About extends Component {
 					logo='static/rgm-logo.png'
 				/>
 				<HeroBanner 
-					title='About'
+					title='Contact'
 					text_position={HeroBanner.TextPosition.BOTTOM}
 					text_gradient={HeroBanner.TextGradient.BOTTOM}
 					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png'
@@ -50,12 +50,12 @@ class About extends Component {
 					<div className={styles('content')}>
 						<PageHeader
 							className={styles('pageheader')}
-							title='About Us'
+							title='Contact Us'
 							background_color='rgba(255, 0, 0, 0.7)'
 							background_skew
 						/>
 						<TextLabel
-							className={styles('about-body')}
+							className={styles('Contact-body')}
 							font={TextLabel.Font.GEORGIA}
 							text='Reliable Glass & Metal is more than just your average glass and metal company, it’s the vision of people who not only work in the industry, but who were raised in the industry. RGM offers highly specialized project managers who are with you from start to finish. This expertise is delivered to all projects regardless of scope or intricacy.'
 						/>
@@ -67,4 +67,4 @@ class About extends Component {
 	}
 }
 
-export default withRouter(About);
+export default withRouter(Contact);

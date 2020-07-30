@@ -29,6 +29,10 @@
 
 .pageheader {
     margin-bottom: 40px;
+
+    @include for-phone-only {
+        margin-bottom: 30px;
+    }
 }
 
 .body {
@@ -39,4 +43,43 @@
         font-size: 18px;
         line-height: 28px;
     }
+
+    .paragraph,
+    .description {
+        margin-bottom: 20px;
+
+        @include for-phone-only {
+            margin-bottom: 10px;
+        }
+    }
+
+    .subheader {
+        margin-bottom: 10px;
+
+        @include for-phone-only {
+            margin-bottom: 5px;
+        }
+    }
+
+    ul {
+        margin-left: 24px;
+        margin-bottom: 20px;
+
+        @include for-phone-only {
+            margin-left: 18px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            &::before {
+                content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                color: $red; /* Change the color */
+                font-weight: bold; /* If you want it to be bold */
+                display: inline-block; /* Needed to add space between the bullet and the text */
+                width: 1em; /* Also needed for space (tweak if needed) */
+                margin-left: -1em; 
+            } 
+        }
+    } 
 }
+
