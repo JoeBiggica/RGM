@@ -59,10 +59,10 @@ class SiteHead extends PureComponent {
 
 				<link rel="canonical" href={`https://${domain}`} />
 				<link rel='shortcut icon' type='image/x-icon' href={`https://${domain}/static/favicon/favicon.png`} />
-				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon.png' sizes='16x16`} />
-				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-32x32.png' sizes='32x3`} />
-				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-48x48.png' sizes='48x48`} />
-				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-96x96.png' sizes='96x96`} />
+				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon.png`} sizes='16x16' />
+				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-32x32.png`} sizes='32x3' />
+				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-48x48.png`} sizes='48x48' />
+				<link rel='icon' type='image/png' href={`https://${domain}/static/favicon/favicon-96x96.png`} sizes='96x96' />
 
 				{/*<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165823635-1"></script>*/}
 

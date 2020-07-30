@@ -105,7 +105,7 @@ class Projects extends Component {
 					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-02.png'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
 					background_gradient={HeroBanner.BackgroundGradient.NONE}
-					hero_height={HeroBanner.HeroHeight.FULL}	
+					hero_height={HeroBanner.HeroHeight.THREE_QUARTER}	
 				/>
 				<section className={styles('container')}>
 					<div className={styles('content', 'portfolio')}>
