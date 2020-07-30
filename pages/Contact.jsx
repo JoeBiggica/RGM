@@ -77,8 +77,8 @@ class Contact extends Component {
 						/>
 						<div className={styles['social-buttons']}>
 							<Social
-								platforms={['email', 'instagram', 'facebook']}
-								urls={['mailto:info@reliableglassandmetal.com', 'https://instagram.com/reliableglassandmetal', 'https://www.facebook.com/pages/category/Glass-Service/Reliable-Glass-and-Metal-150111105777792/']}
+								platforms={['email', 'instagram']}
+								urls={['mailto:info@reliableglassandmetal.com', 'https://instagram.com/reliableglassandmetal']}
 								color={Social.Color.BLACK_TO_RED}
 							/>
 						</div>
