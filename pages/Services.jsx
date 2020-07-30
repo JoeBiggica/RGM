@@ -28,7 +28,7 @@ class Services extends Component {
 		super(props);
 
 		this.specialties = [
-			'Windows',
+			'Windows / Window Wall',
 			'Curtain Wall',
 			'Glass Railings',
 			'Storefonts',
