@@ -6,8 +6,6 @@ import PropTypes from 'prop-types';
 //import { toggleTap, incrementCount, decrementCount } from '../redux/actions';
 import Head from 'next/head';
 import Header from 'components/header';
-import Social from 'components/social';
-import SpringImage from 'components/springimage';
 import Gallery from 'component-library/lib/gallery';
 
 import styles from './Index.scss';
@@ -195,13 +193,6 @@ class Index extends Component {
 						<div className={styles('content')}>
 							<h1 style={{display: 'none'}}>RGM Reliable Glass and Metal</h1>
 							<div className={styles('logo')} style={logo_styles}/>
-							<div className={styles['social-buttons']}>
-								<Social
-									platforms={['instagram', 'email']}
-									urls={['https://instagram.com/reliableglassandmetal', 'mailto:rgm.jesse@gmail.com']}
-									color={Social.Color.WHITE_TO_RED}
-								/>
-							</div>
 						</div>
 					</section>
 

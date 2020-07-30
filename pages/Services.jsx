@@ -68,7 +68,7 @@ class Services extends Component {
 					title='Services'
 					text_position={HeroBanner.TextPosition.BOTTOM}
 					text_gradient={HeroBanner.TextGradient.BOTTOM}
-					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/building-03.png'
+					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/storefront-02.png'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
 					background_gradient={HeroBanner.BackgroundGradient.TOP}
 					hero_height={HeroBanner.HeroHeight.THREE_QUARTER}	

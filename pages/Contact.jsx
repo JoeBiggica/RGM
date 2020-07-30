@@ -8,6 +8,7 @@ import PageHeader from 'components/pageheader';
 
 import HeroBanner from 'component-library/lib/herobanner';
 import TextLabel from 'component-library/lib/textlabel';
+import Social from 'components/social';
 
 import styles from './Contact.scss';
 
@@ -41,7 +42,7 @@ class Contact extends Component {
 					title='Contact'
 					text_position={HeroBanner.TextPosition.BOTTOM}
 					text_gradient={HeroBanner.TextGradient.BOTTOM}
-					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/doors-01.png'
+					background_image='https://biggica-sites.s3.amazonaws.com/rgm/homepage-portfolio/wall-01.png'
 					background_position={HeroBanner.BackgroundPosition.CENTER}
 					background_gradient={HeroBanner.BackgroundGradient.TOP}
 					hero_height={HeroBanner.HeroHeight.THREE_QUARTER}	
@@ -55,10 +56,32 @@ class Contact extends Component {
 							background_skew
 						/>
 						<TextLabel
-							className={styles('Contact-body')}
+							className={styles('paragraph')}
 							font={TextLabel.Font.GEORGIA}
-							text='Reliable Glass & Metal is more than just your average glass and metal company, it’s the vision of people who not only work in the industry, but who were raised in the industry. RGM offers highly specialized project managers who are with you from start to finish. This expertise is delivered to all projects regardless of scope or intricacy.'
+							text='If you have any questions or would like us to look at a project, please contact us using the email below or clicking the email icon, and we will get back to you as soon as possible.'
 						/>
+						<TextLabel
+							className={styles('paragraph')}
+							font={TextLabel.Font.GEORGIA}
+							text='info@reliableglassandmetal.com'
+							href='mailto:info@reliableglassandmetal.com'
+							tag='a'
+						/>
+					</div>
+					<div className={styles('content')}>
+						<PageHeader
+							className={styles('pageheader')}
+							title='Social'
+							background_color='rgba(255, 0, 0, 0.7)'
+							background_skew
+						/>
+						<div className={styles['social-buttons']}>
+							<Social
+								platforms={['email', 'instagram', 'facebook']}
+								urls={['mailto:info@reliableglassandmetal.com', 'https://instagram.com/reliableglassandmetal', 'https://www.facebook.com/pages/category/Glass-Service/Reliable-Glass-and-Metal-150111105777792/']}
+								color={Social.Color.BLACK_TO_RED}
+							/>
+						</div>
 					</div>
 				</section>
 
